@@ -95,7 +95,9 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+// si hago a todas las ventanas transparentes con picom no tiene sentido
+// tener una transparencia separada para st, se ve más transparente aún
+float alpha = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
